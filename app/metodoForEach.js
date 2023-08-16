@@ -1,6 +1,8 @@
 const elementoLivros = document.querySelector('#livros')
+const sectionValorLivrosdisponiveis = document.querySelector('#valor_total_livros_disponiveis')
 
 function exibeLivro(listaLivro){
+  sectionValorLivrosdisponiveis.innerHTML = ''
   elementoLivros.innerHTML = ''
     listaLivro.forEach(livro => {
       let disponibilidade = livro.quantidade > 0 ? 'livro__imagens' : 'livros__imagem indisponivel'
