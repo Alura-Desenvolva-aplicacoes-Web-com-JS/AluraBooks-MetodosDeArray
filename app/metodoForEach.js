@@ -1,6 +1,7 @@
 const elementoLivros = document.querySelector('#livros')
 
 function exibeLivro(listaLivro){
+  elementoLivros.innerHTML = ''
     listaLivro.forEach(livro => {
         elementoLivros.innerHTML += `<div class="livro">
         <img class="livro__imagens" src="${livro.imagem}" alt="${livro.alt}" />
